@@ -10,3 +10,4 @@ Feature: Basket Checkout
     Examples: 
       | banana_price | apple_price | nb_banana | nb_apple | total |
       | 15.0         | 10.0        |         1 |        1 | 25.0  |
+      | 10.0         | 5.0         |         2 |        3 | 35.0  |
