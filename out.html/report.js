@@ -1,93 +1,131 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("checkout.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("basket_checkout.feature");
 formatter.feature({
   "line": 1,
-  "name": "Checkout",
-  "description": "",
-  "id": "checkout",
+  "name": "Basket Checkout",
+  "description": "\r\nIn order to sell bananas ans apples\r\nAs a fruit seller\r\nI want a basket that can add bananas and apples and provide the total amount for checkout",
+  "id": "basket-checkout",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "line": 3,
-  "name": "Checkout a banana",
+  "line": 7,
+  "name": "Basket checkout with bananas and apples",
   "description": "",
-  "id": "checkout;checkout-a-banana",
+  "id": "basket-checkout;basket-checkout-with-bananas-and-apples",
   "type": "scenario_outline",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 4,
-  "name": "the price of a \"banana\" is 40",
+  "line": 8,
+  "name": "the price of a banana is \u003cbanana_price\u003e",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 5,
-  "name": "I checkout \u003ccount\u003e \"banana\"",
+  "line": 9,
+  "name": "the price a an apple is \u003capple_price\u003e",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 10,
+  "name": "I add \u003cnb_banana\u003e banana to my basket",
   "keyword": "When "
 });
 formatter.step({
-  "line": 6,
-  "name": "the total price should be \u003ctotal\u003ec",
+  "line": 11,
+  "name": "I add \u003cnb_apple\u003e apple to my basket",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 12,
+  "name": "I can checkout with a total amount of \u003ctotal\u003e",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 8,
+  "line": 14,
   "name": "",
   "description": "",
-  "id": "checkout;checkout-a-banana;",
+  "id": "basket-checkout;basket-checkout-with-bananas-and-apples;",
   "rows": [
     {
       "cells": [
-        "count",
+        "banana_price",
+        "apple_price",
+        "nb_banana",
+        "nb_apple",
         "total"
       ],
-      "line": 9,
-      "id": "checkout;checkout-a-banana;;1"
+      "line": 15,
+      "id": "basket-checkout;basket-checkout-with-bananas-and-apples;;1"
     },
     {
       "cells": [
+        "15.0",
+        "10.0",
         "1",
-        "40"
+        "1",
+        "25.0"
       ],
-      "line": 10,
-      "id": "checkout;checkout-a-banana;;2"
+      "line": 16,
+      "id": "basket-checkout;basket-checkout-with-bananas-and-apples;;2"
     },
     {
       "cells": [
+        "10.0",
+        "5.0",
         "2",
-        "80"
+        "3",
+        "35.0"
       ],
-      "line": 11,
-      "id": "checkout;checkout-a-banana;;3"
+      "line": 17,
+      "id": "basket-checkout;basket-checkout-with-bananas-and-apples;;3"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 10,
-  "name": "Checkout a banana",
+  "line": 16,
+  "name": "Basket checkout with bananas and apples",
   "description": "",
-  "id": "checkout;checkout-a-banana;;2",
+  "id": "basket-checkout;basket-checkout-with-bananas-and-apples;;2",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 4,
-  "name": "the price of a \"banana\" is 40",
+  "line": 8,
+  "name": "the price of a banana is 15.0",
+  "matchedColumns": [
+    0
+  ],
   "keyword": "Given "
 });
 formatter.step({
-  "line": 5,
-  "name": "I checkout 1 \"banana\"",
+  "line": 9,
+  "name": "the price a an apple is 10.0",
   "matchedColumns": [
-    0
+    1
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 10,
+  "name": "I add 1 banana to my basket",
+  "matchedColumns": [
+    2
   ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 6,
-  "name": "the total price should be 40c",
+  "line": 11,
+  "name": "I add 1 apple to my basket",
   "matchedColumns": [
-    1
+    3
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 12,
+  "name": "I can checkout with a total amount of 25.0",
+  "matchedColumns": [
+    4
   ],
   "keyword": "Then "
 });
@@ -95,60 +133,67 @@ formatter.match({});
 formatter.result({
   "status": "undefined"
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 11
-    },
-    {
-      "val": "banana",
-      "offset": 14
-    }
-  ],
-  "location": "CheckoutSteps.iCheckout(int,String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "40",
-      "offset": 26
-    }
-  ],
-  "location": "CheckoutSteps.theTotalPriceShouldBeC(int)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 formatter.scenario({
-  "line": 11,
-  "name": "Checkout a banana",
+  "line": 17,
+  "name": "Basket checkout with bananas and apples",
   "description": "",
-  "id": "checkout;checkout-a-banana;;3",
+  "id": "basket-checkout;basket-checkout-with-bananas-and-apples;;3",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 4,
-  "name": "the price of a \"banana\" is 40",
+  "line": 8,
+  "name": "the price of a banana is 10.0",
+  "matchedColumns": [
+    0
+  ],
   "keyword": "Given "
 });
 formatter.step({
-  "line": 5,
-  "name": "I checkout 2 \"banana\"",
+  "line": 9,
+  "name": "the price a an apple is 5.0",
   "matchedColumns": [
-    0
+    1
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 10,
+  "name": "I add 2 banana to my basket",
+  "matchedColumns": [
+    2
   ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 6,
-  "name": "the total price should be 80c",
+  "line": 11,
+  "name": "I add 3 apple to my basket",
   "matchedColumns": [
-    1
+    3
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 12,
+  "name": "I can checkout with a total amount of 35.0",
+  "matchedColumns": [
+    4
   ],
   "keyword": "Then "
 });
@@ -156,32 +201,55 @@ formatter.match({});
 formatter.result({
   "status": "undefined"
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "2",
-      "offset": 11
-    },
-    {
-      "val": "banana",
-      "offset": 14
-    }
-  ],
-  "location": "CheckoutSteps.iCheckout(int,String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "80",
-      "offset": 26
-    }
-  ],
-  "location": "CheckoutSteps.theTotalPriceShouldBeC(int)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.scenario({
+  "line": 19,
+  "name": "Error case -\u003e adding unsuported fruit to a basket",
+  "description": "",
+  "id": "basket-checkout;error-case--\u003e-adding-unsuported-fruit-to-a-basket",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 20,
+  "name": "I have an active basket with bananas and apples",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 21,
+  "name": "I add an lemon",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 22,
+  "name": "I get the message \"article not suported\"",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 });
