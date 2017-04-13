@@ -10,16 +10,10 @@ public class BasketCheckoutSteps {
 	private Basket basket = new Basket();
 	private String errorMessage = null;
 	
-	@Given("^the price of a banana is (.+)$")
-	public void the_price_of_a_banana_is(double price) throws Throwable {
+	@Given("^the price of a \"([^\"]*)\" is (.+)$")
+	public void the_price_of_a_is(String article, double price) throws Throwable {
 		if (basket == null) basket = new Basket();
-		basket.setPrice("banana", price);
-	}
-
-	@Given("^the price a an apple is (.*)$")
-	public void the_price_a_an_apple_is(double price) throws Throwable {
-		if (basket == null) basket = new Basket();
-		basket.setPrice("apple", price);
+		basket.setPrice(article, price);
 	}
 
 	@When("^I add ([^\"]*) \"([^\"]*)\" to my basket$")

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="0.093946">
+<testcase classname="Fruit Basket" name="Basket checkout with bananas and apples" time="0.09306">
+<system-out><![CDATA[Given the price of a "banana" is 15.0.......................................passed
+And the price of a "apple" is 10.0..........................................passed
+When I add 1 "banana" to my basket..........................................passed
+And I add 1 "apple" to my basket............................................passed
+Then I can checkout with a total amount of 25.0.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Fruit Basket" name="Basket checkout with bananas and apples 2" time="0.000379">
+<system-out><![CDATA[Given the price of a "banana" is 10.0.......................................passed
+And the price of a "apple" is 5.0...........................................passed
+When I add 2 "banana" to my basket..........................................passed
+And I add 3 "apple" to my basket............................................passed
+Then I can checkout with a total amount of 35.0.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Fruit Basket" name="Error case -&gt; adding unsuported fruit to a basket" time="0.000293">
+<system-out><![CDATA[Given I have an active basket with 1 banana and 1 apple.....................passed
+When I add 1 "lemon" to my basket...........................................passed
+Then I get the message "article not supported"..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Fruit Basket" name="Error case -&gt; basket with a negative quantity" time="0.000214">
+<system-out><![CDATA[Given I have an active basket with 1 banana and 1 apple.....................passed
+When I remove 2 "banana" to my basket.......................................passed
+Then I get the message "wrong quantity".....................................passed
+]]></system-out>
+</testcase>
+</testsuite>

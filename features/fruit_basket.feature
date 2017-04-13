@@ -2,11 +2,11 @@ Feature: Fruit Basket
   
   In order to sell bananas ans apples
   As a fruit seller
-  I want a basket to buy bananas and apples 
+  I want a basket to add and remove articles and to provide the total price
 
   Scenario Outline: Basket checkout with bananas and apples
-    Given the price of a banana is <banana_price>
-      And the price a an apple is <apple_price>
+    Given the price of a "banana" is <banana_price>
+      And the price of a "apple" is <apple_price>
      When I add <nb_banana> "banana" to my basket
       And I add <nb_apple> "apple" to my basket
      Then I can checkout with a total amount of <total>

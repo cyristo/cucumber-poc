@@ -9,8 +9,8 @@ public class Basket {
 	private int nbApple = 0;
     
 	public void setPrice(String article, double price) {
-		if (article == "banana") bananaPrice = price;
-		else if (article == "apple") applePrice = price;
+		if (article.equals("banana")) bananaPrice = price;
+		else if (article.equals("apple")) applePrice = price;
 	}
 	
     public void add(String article, int count) throws Exception { 
