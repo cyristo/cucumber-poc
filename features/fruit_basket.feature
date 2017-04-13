@@ -17,11 +17,13 @@ Feature: Fruit Basket
       | 10.0         | 5.0         |         2 |        3 | 35.0  |
 
   Scenario: Error case -> adding unsuported fruit to a basket
-    Given I have an active basket with 1 banana and 1 apple
+    Given I add 1 "banana" to my basket
      When I add 1 "lemon" to my basket
      Then I get the message "article not supported"
 
   Scenario: Error case -> basket with a negative quantity
-    Given I have an active basket with 1 banana and 1 apple
+    Given I add 1 "banana" to my basket
      When I remove 2 "banana" to my basket
+     Then I get the message "wrong quantity"
+     When I remove 1 "apple" to my basket
      Then I get the message "wrong quantity"

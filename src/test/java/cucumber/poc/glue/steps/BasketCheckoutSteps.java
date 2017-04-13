@@ -40,15 +40,6 @@ public class BasketCheckoutSteps {
 	public void i_can_checkout_with_a_total_amount_of(double total) throws Throwable {
 		assertEquals(total, basket.total(), 0);
 	}
-	
-	@Given("^I have an active basket with (\\d+) banana and (\\d+) apple$")
-	public void i_have_an_active_basket_with_banana_and_apple(int nbBanana, int nbApple) throws Throwable {
-		basket = new Basket();
-		basket.setPrice("banana", 10);
-		basket.add("banana",nbBanana);
-		basket.setPrice("apple", 10);
-		basket.add("apple",nbApple);
-	}
 
 	@Then("^I get the message \"([^\"]*)\"$")
 	public void i_get_the_message(String message) throws Throwable {
