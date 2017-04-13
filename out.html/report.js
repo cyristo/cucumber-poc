@@ -140,10 +140,10 @@ formatter.match({
       "offset": 27
     }
   ],
-  "location": "BasketCheckoutSteps.the_price_of_a_is(String,double)"
+  "location": "FruitBasketSteps.the_price_of_a_is(String,double)"
 });
 formatter.result({
-  "duration": 121448874,
+  "duration": 109482673,
   "status": "passed"
 });
 formatter.match({
@@ -157,10 +157,10 @@ formatter.match({
       "offset": 26
     }
   ],
-  "location": "BasketCheckoutSteps.the_price_of_a_is(String,double)"
+  "location": "FruitBasketSteps.the_price_of_a_is(String,double)"
 });
 formatter.result({
-  "duration": 122652,
+  "duration": 125524,
   "status": "passed"
 });
 formatter.match({
@@ -174,10 +174,10 @@ formatter.match({
       "offset": 9
     }
   ],
-  "location": "BasketCheckoutSteps.i_add_to_my_basket(String,String)"
+  "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 101322,
+  "duration": 131267,
   "status": "passed"
 });
 formatter.match({
@@ -191,10 +191,10 @@ formatter.match({
       "offset": 9
     }
   ],
-  "location": "BasketCheckoutSteps.i_add_to_my_basket(String,String)"
+  "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 59070,
+  "duration": 83273,
   "status": "passed"
 });
 formatter.match({
@@ -204,10 +204,10 @@ formatter.match({
       "offset": 38
     }
   ],
-  "location": "BasketCheckoutSteps.i_can_checkout_with_a_total_amount_of(double)"
+  "location": "FruitBasketSteps.i_can_checkout_with_a_total_amount_of(double)"
 });
 formatter.result({
-  "duration": 2131855,
+  "duration": 2154006,
   "status": "passed"
 });
 formatter.scenario({
@@ -269,10 +269,10 @@ formatter.match({
       "offset": 27
     }
   ],
-  "location": "BasketCheckoutSteps.the_price_of_a_is(String,double)"
+  "location": "FruitBasketSteps.the_price_of_a_is(String,double)"
 });
 formatter.result({
-  "duration": 130447,
+  "duration": 134138,
   "status": "passed"
 });
 formatter.match({
@@ -286,10 +286,10 @@ formatter.match({
       "offset": 26
     }
   ],
-  "location": "BasketCheckoutSteps.the_price_of_a_is(String,double)"
+  "location": "FruitBasketSteps.the_price_of_a_is(String,double)"
 });
 formatter.result({
-  "duration": 121012,
+  "duration": 114038,
   "status": "passed"
 });
 formatter.match({
@@ -303,10 +303,10 @@ formatter.match({
       "offset": 9
     }
   ],
-  "location": "BasketCheckoutSteps.i_add_to_my_basket(String,String)"
+  "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 90656,
+  "duration": 88605,
   "status": "passed"
 });
 formatter.match({
@@ -320,10 +320,10 @@ formatter.match({
       "offset": 9
     }
   ],
-  "location": "BasketCheckoutSteps.i_add_to_my_basket(String,String)"
+  "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 89426,
+  "duration": 102142,
   "status": "passed"
 });
 formatter.match({
@@ -333,10 +333,10 @@ formatter.match({
       "offset": 38
     }
   ],
-  "location": "BasketCheckoutSteps.i_can_checkout_with_a_total_amount_of(double)"
+  "location": "FruitBasketSteps.i_can_checkout_with_a_total_amount_of(double)"
 });
 formatter.result({
-  "duration": 76709,
+  "duration": 119370,
   "status": "passed"
 });
 formatter.scenario({
@@ -349,7 +349,7 @@ formatter.scenario({
 });
 formatter.step({
   "line": 20,
-  "name": "I have an active basket with 1 banana and 1 apple",
+  "name": "I add 1 \"banana\" to my basket",
   "keyword": "Given "
 });
 formatter.step({
@@ -366,17 +366,17 @@ formatter.match({
   "arguments": [
     {
       "val": "1",
-      "offset": 29
+      "offset": 6
     },
     {
-      "val": "1",
-      "offset": 42
+      "val": "banana",
+      "offset": 9
     }
   ],
-  "location": "BasketCheckoutSteps.i_have_an_active_basket_with_banana_and_apple(int,int)"
+  "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 212898,
+  "duration": 108705,
   "status": "passed"
 });
 formatter.match({
@@ -390,10 +390,10 @@ formatter.match({
       "offset": 9
     }
   ],
-  "location": "BasketCheckoutSteps.i_add_to_my_basket(String,String)"
+  "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 138650,
+  "duration": 136189,
   "status": "passed"
 });
 formatter.match({
@@ -403,10 +403,10 @@ formatter.match({
       "offset": 19
     }
   ],
-  "location": "BasketCheckoutSteps.i_get_the_message(String)"
+  "location": "FruitBasketSteps.i_get_the_message(String)"
 });
 formatter.result({
-  "duration": 108705,
+  "duration": 98040,
   "status": "passed"
 });
 formatter.scenario({
@@ -419,7 +419,7 @@ formatter.scenario({
 });
 formatter.step({
   "line": 25,
-  "name": "I have an active basket with 1 banana and 1 apple",
+  "name": "I add 1 \"banana\" to my basket",
   "keyword": "Given "
 });
 formatter.step({
@@ -432,21 +432,31 @@ formatter.step({
   "name": "I get the message \"wrong quantity\"",
   "keyword": "Then "
 });
+formatter.step({
+  "line": 28,
+  "name": "I remove 1 \"apple\" to my basket",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 29,
+  "name": "I get the message \"wrong quantity\"",
+  "keyword": "Then "
+});
 formatter.match({
   "arguments": [
     {
       "val": "1",
-      "offset": 29
+      "offset": 6
     },
     {
-      "val": "1",
-      "offset": 42
+      "val": "banana",
+      "offset": 9
     }
   ],
-  "location": "BasketCheckoutSteps.i_have_an_active_basket_with_banana_and_apple(int,int)"
+  "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 143983,
+  "duration": 115269,
   "status": "passed"
 });
 formatter.match({
@@ -460,10 +470,10 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "BasketCheckoutSteps.i_remove_to_my_basket(String,String)"
+  "location": "FruitBasketSteps.i_remove_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 114448,
+  "duration": 121422,
   "status": "passed"
 });
 formatter.match({
@@ -473,10 +483,40 @@ formatter.match({
       "offset": 19
     }
   ],
-  "location": "BasketCheckoutSteps.i_get_the_message(String)"
+  "location": "FruitBasketSteps.i_get_the_message(String)"
 });
 formatter.result({
-  "duration": 59480,
+  "duration": 65634,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1",
+      "offset": 9
+    },
+    {
+      "val": "apple",
+      "offset": 12
+    }
+  ],
+  "location": "FruitBasketSteps.i_remove_to_my_basket(String,String)"
+});
+formatter.result({
+  "duration": 102962,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "wrong quantity",
+      "offset": 19
+    }
+  ],
+  "location": "FruitBasketSteps.i_get_the_message(String)"
+});
+formatter.result({
+  "duration": 65224,
   "status": "passed"
 });
 });

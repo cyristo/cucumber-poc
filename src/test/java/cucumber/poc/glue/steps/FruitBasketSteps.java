@@ -5,7 +5,7 @@ import cucumber.poc.sut.Basket;
 import cucumber.api.PendingException;
 import static org.junit.Assert.assertEquals;
 
-public class BasketCheckoutSteps {
+public class FruitBasketSteps {
 	
 	private Basket basket = new Basket();
 	private String errorMessage = null;
