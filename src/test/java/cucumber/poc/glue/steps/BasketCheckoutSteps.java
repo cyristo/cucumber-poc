@@ -22,16 +22,24 @@ public class BasketCheckoutSteps {
 		basket.setPrice("apple", price);
 	}
 
-	@When("^I add (\\d+) banana to my basket$")
-	public void i_add_banana_to_my_basket(int nb) throws Throwable {
+	@When("^I add ([^\"]*) \"([^\"]*)\" to my basket$")
+	public void i_add_to_my_basket(String nb, String article) throws Throwable {
 		if (basket == null) basket = new Basket();
-		basket.add("banana", nb);
+		try {
+			basket.add(article, new Integer(nb));
+		} catch (Exception e) {
+			errorMessage = e.getMessage();
+		}
 	}
-
-	@When("^I add (\\d+) apple to my basket$")
-	public void i_add_to_my_basket(int nb) throws Throwable {
+	
+	@When("^I remove ([^\"]*) \"([^\"]*)\" to my basket$")
+	public void i_remove_to_my_basket(String nb, String article) throws Throwable {
 		if (basket == null) basket = new Basket();
-		basket.add("apple", nb);
+		try {
+			basket.remove(article, new Integer(nb));
+		} catch (Exception e) {
+			errorMessage = e.getMessage();
+		}
 	}
 
 	@When("^I can checkout with a total amount of (.+)$")
@@ -39,22 +47,13 @@ public class BasketCheckoutSteps {
 		assertEquals(total, basket.total(), 0);
 	}
 	
-	@Given("^I have an active basket with bananas and apples$")
-	public void i_have_an_active_basket_with_bananas_and_apples() throws Throwable {
+	@Given("^I have an active basket with (\\d+) banana and (\\d+) apple$")
+	public void i_have_an_active_basket_with_banana_and_apple(int nbBanana, int nbApple) throws Throwable {
 		basket = new Basket();
 		basket.setPrice("banana", 10);
-		basket.add("banana",1);
+		basket.add("banana",nbBanana);
 		basket.setPrice("apple", 10);
-		basket.add("apple",1);
-	}
-
-	@When("^I add an lemon$")
-	public void i_add_an_lemon() throws Throwable {
-		try {
-			basket.add("lemon",1);
-		} catch (Exception e) {
-			errorMessage = e.getMessage();
-		}
+		basket.add("apple",nbApple);
 	}
 
 	@Then("^I get the message \"([^\"]*)\"$")

@@ -26,12 +26,12 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "I add \u003cnb_banana\u003e banana to my basket",
+  "name": "I add \u003cnb_banana\u003e \"banana\" to my basket",
   "keyword": "When "
 });
 formatter.step({
   "line": 11,
-  "name": "I add \u003cnb_apple\u003e apple to my basket",
+  "name": "I add \u003cnb_apple\u003e \"apple\" to my basket",
   "keyword": "And "
 });
 formatter.step({
@@ -107,7 +107,7 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "I add 1 banana to my basket",
+  "name": "I add 1 \"banana\" to my basket",
   "matchedColumns": [
     2
   ],
@@ -115,7 +115,7 @@ formatter.step({
 });
 formatter.step({
   "line": 11,
-  "name": "I add 1 apple to my basket",
+  "name": "I add 1 \"apple\" to my basket",
   "matchedColumns": [
     3
   ],
@@ -175,7 +175,7 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "I add 2 banana to my basket",
+  "name": "I add 2 \"banana\" to my basket",
   "matchedColumns": [
     2
   ],
@@ -183,7 +183,7 @@ formatter.step({
 });
 formatter.step({
   "line": 11,
-  "name": "I add 3 apple to my basket",
+  "name": "I add 3 \"apple\" to my basket",
   "matchedColumns": [
     3
   ],
@@ -227,17 +227,52 @@ formatter.scenario({
 });
 formatter.step({
   "line": 20,
-  "name": "I have an active basket with bananas and apples",
+  "name": "I have an active basket with 1 banana and 1 apple",
   "keyword": "Given "
 });
 formatter.step({
   "line": 21,
-  "name": "I add an lemon",
+  "name": "I add 1 \"lemon\" to my basket",
   "keyword": "When "
 });
 formatter.step({
   "line": 22,
-  "name": "I get the message \"article not suported\"",
+  "name": "I get the message \"article not supported\"",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.scenario({
+  "line": 24,
+  "name": "Error case -\u003e basket with a negative quantity",
+  "description": "",
+  "id": "basket-checkout;error-case--\u003e-basket-with-a-negative-quantity",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 25,
+  "name": "I have an active basket with 1 banana and 1 apple",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 26,
+  "name": "I remove 2 \"banana\" to my basket",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 27,
+  "name": "I get the message \"article not supported\"",
   "keyword": "Then "
 });
 formatter.match({});
