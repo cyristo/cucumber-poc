@@ -1,3 +1,0 @@
-set jarDir=C:\Users\x131389\.m2\repository\info\cukes\
-set stepDefDir=C:\Users\x131389\workspace\cucumber-poc\target\test-classes\cucumber\poc\checkout\*.class
-java -cp "%jarDir%cucumber-core\1.2.5\*;%jarDir%cucumber-html\0.2.3\*;%jarDir%cucumber-java\1.2.5\*;%jarDir%cucumber-jvm\1.2.5\*;%jarDir%cucumber-jvm-deps\1.0.5\*;%jarDir%gherkin\2.12.2\*;.;%stepDefDir%" cucumber.api.cli.Main -p pretty --snippets camelcase -g .\target\test-classes\cucumber\poc\checkout\ features
