@@ -143,7 +143,7 @@ formatter.match({
   "location": "FruitBasketSteps.the_price_of_a_is(String,double)"
 });
 formatter.result({
-  "duration": 109482673,
+  "duration": 118419104,
   "status": "passed"
 });
 formatter.match({
@@ -160,7 +160,7 @@ formatter.match({
   "location": "FruitBasketSteps.the_price_of_a_is(String,double)"
 });
 formatter.result({
-  "duration": 125524,
+  "duration": 124717,
   "status": "passed"
 });
 formatter.match({
@@ -177,7 +177,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 131267,
+  "duration": 128819,
   "status": "passed"
 });
 formatter.match({
@@ -194,7 +194,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 83273,
+  "duration": 99691,
   "status": "passed"
 });
 formatter.match({
@@ -207,7 +207,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_can_checkout_with_a_total_amount_of(double)"
 });
 formatter.result({
-  "duration": 2154006,
+  "duration": 2119359,
   "status": "passed"
 });
 formatter.scenario({
@@ -272,7 +272,7 @@ formatter.match({
   "location": "FruitBasketSteps.the_price_of_a_is(String,double)"
 });
 formatter.result({
-  "duration": 134138,
+  "duration": 189536,
   "status": "passed"
 });
 formatter.match({
@@ -289,7 +289,7 @@ formatter.match({
   "location": "FruitBasketSteps.the_price_of_a_is(String,double)"
 });
 formatter.result({
-  "duration": 114038,
+  "duration": 111589,
   "status": "passed"
 });
 formatter.match({
@@ -306,7 +306,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 88605,
+  "duration": 83691,
   "status": "passed"
 });
 formatter.match({
@@ -323,7 +323,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 102142,
+  "duration": 60307,
   "status": "passed"
 });
 formatter.match({
@@ -336,7 +336,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_can_checkout_with_a_total_amount_of(double)"
 });
 formatter.result({
-  "duration": 119370,
+  "duration": 73845,
   "status": "passed"
 });
 formatter.scenario({
@@ -376,7 +376,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 108705,
+  "duration": 72204,
   "status": "passed"
 });
 formatter.match({
@@ -393,7 +393,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 136189,
+  "duration": 127588,
   "status": "passed"
 });
 formatter.match({
@@ -406,7 +406,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_get_the_message(String)"
 });
 formatter.result({
-  "duration": 98040,
+  "duration": 100101,
   "status": "passed"
 });
 formatter.scenario({
@@ -456,7 +456,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 115269,
+  "duration": 73435,
   "status": "passed"
 });
 formatter.match({
@@ -473,7 +473,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_remove_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 121422,
+  "duration": 82050,
   "status": "passed"
 });
 formatter.match({
@@ -486,7 +486,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_get_the_message(String)"
 });
 formatter.result({
-  "duration": 65634,
+  "duration": 65230,
   "status": "passed"
 });
 formatter.match({
@@ -503,7 +503,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_remove_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 102962,
+  "duration": 86152,
   "status": "passed"
 });
 formatter.match({
@@ -516,7 +516,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_get_the_message(String)"
 });
 formatter.result({
-  "duration": 65224,
+  "duration": 47179,
   "status": "passed"
 });
 });
