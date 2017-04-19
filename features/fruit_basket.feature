@@ -9,7 +9,7 @@ Feature: Fruit Basket
       And the price of a "apple" is <apple_price>
      When I add <nb_banana> "banana" to my basket
       And I add <nb_apple> "apple" to my basket
-     Then I can checkout with a total amount of <total>
+     Then I should checkout with a total amount of <total>
 
     Examples: 
       | banana_price | apple_price | nb_banana | nb_apple | total |
@@ -19,11 +19,11 @@ Feature: Fruit Basket
   Scenario: Error case -> adding unsuported fruit to a basket
     Given I add 1 "banana" to my basket
      When I add 1 "lemon" to my basket
-     Then I get the message "article not supported"
+     Then I should get the message "article not supported"
 
   Scenario: Error case -> basket with a negative quantity
     Given I add 1 "banana" to my basket
      When I remove 2 "banana" to my basket
-     Then I get the message "wrong quantity"
+     Then I should get the message "wrong quantity"
      When I remove 1 "apple" to my basket
-     Then I get the message "wrong quantity"
+     Then I should get the message "wrong quantity"

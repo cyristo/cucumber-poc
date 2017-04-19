@@ -36,7 +36,7 @@ formatter.step({
 });
 formatter.step({
   "line": 12,
-  "name": "I can checkout with a total amount of \u003ctotal\u003e",
+  "name": "I should checkout with a total amount of \u003ctotal\u003e",
   "keyword": "Then "
 });
 formatter.examples({
@@ -123,7 +123,7 @@ formatter.step({
 });
 formatter.step({
   "line": 12,
-  "name": "I can checkout with a total amount of 25.0",
+  "name": "I should checkout with a total amount of 25.0",
   "matchedColumns": [
     4
   ],
@@ -143,7 +143,7 @@ formatter.match({
   "location": "FruitBasketSteps.the_price_of_a_is(String,double)"
 });
 formatter.result({
-  "duration": 118419104,
+  "duration": 192868603,
   "status": "passed"
 });
 formatter.match({
@@ -160,7 +160,7 @@ formatter.match({
   "location": "FruitBasketSteps.the_price_of_a_is(String,double)"
 });
 formatter.result({
-  "duration": 124717,
+  "duration": 130867,
   "status": "passed"
 });
 formatter.match({
@@ -177,7 +177,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 128819,
+  "duration": 139483,
   "status": "passed"
 });
 formatter.match({
@@ -194,20 +194,20 @@ formatter.match({
   "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 99691,
+  "duration": 92715,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "25.0",
-      "offset": 38
+      "offset": 41
     }
   ],
   "location": "FruitBasketSteps.i_can_checkout_with_a_total_amount_of(double)"
 });
 formatter.result({
-  "duration": 2119359,
+  "duration": 2276431,
   "status": "passed"
 });
 formatter.scenario({
@@ -252,7 +252,7 @@ formatter.step({
 });
 formatter.step({
   "line": 12,
-  "name": "I can checkout with a total amount of 35.0",
+  "name": "I should checkout with a total amount of 35.0",
   "matchedColumns": [
     4
   ],
@@ -272,7 +272,7 @@ formatter.match({
   "location": "FruitBasketSteps.the_price_of_a_is(String,double)"
 });
 formatter.result({
-  "duration": 189536,
+  "duration": 127585,
   "status": "passed"
 });
 formatter.match({
@@ -289,7 +289,7 @@ formatter.match({
   "location": "FruitBasketSteps.the_price_of_a_is(String,double)"
 });
 formatter.result({
-  "duration": 111589,
+  "duration": 112816,
   "status": "passed"
 });
 formatter.match({
@@ -306,7 +306,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 83691,
+  "duration": 89843,
   "status": "passed"
 });
 formatter.match({
@@ -323,20 +323,20 @@ formatter.match({
   "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 60307,
+  "duration": 89843,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "35.0",
-      "offset": 38
+      "offset": 41
     }
   ],
   "location": "FruitBasketSteps.i_can_checkout_with_a_total_amount_of(double)"
 });
 formatter.result({
-  "duration": 73845,
+  "duration": 92305,
   "status": "passed"
 });
 formatter.scenario({
@@ -359,7 +359,7 @@ formatter.step({
 });
 formatter.step({
   "line": 22,
-  "name": "I get the message \"article not supported\"",
+  "name": "I should get the message \"article not supported\"",
   "keyword": "Then "
 });
 formatter.match({
@@ -376,7 +376,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 72204,
+  "duration": 94356,
   "status": "passed"
 });
 formatter.match({
@@ -393,20 +393,20 @@ formatter.match({
   "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 127588,
+  "duration": 115688,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "article not supported",
-      "offset": 19
+      "offset": 26
     }
   ],
   "location": "FruitBasketSteps.i_get_the_message(String)"
 });
 formatter.result({
-  "duration": 100101,
+  "duration": 86971,
   "status": "passed"
 });
 formatter.scenario({
@@ -429,7 +429,7 @@ formatter.step({
 });
 formatter.step({
   "line": 27,
-  "name": "I get the message \"wrong quantity\"",
+  "name": "I should get the message \"wrong quantity\"",
   "keyword": "Then "
 });
 formatter.step({
@@ -439,7 +439,7 @@ formatter.step({
 });
 formatter.step({
   "line": 29,
-  "name": "I get the message \"wrong quantity\"",
+  "name": "I should get the message \"wrong quantity\"",
   "keyword": "Then "
 });
 formatter.match({
@@ -456,7 +456,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 73435,
+  "duration": 94355,
   "status": "passed"
 });
 formatter.match({
@@ -473,20 +473,20 @@ formatter.match({
   "location": "FruitBasketSteps.i_remove_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 82050,
+  "duration": 107894,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "wrong quantity",
-      "offset": 19
+      "offset": 26
     }
   ],
   "location": "FruitBasketSteps.i_get_the_message(String)"
 });
 formatter.result({
-  "duration": 65230,
+  "duration": 58255,
   "status": "passed"
 });
 formatter.match({
@@ -503,20 +503,20 @@ formatter.match({
   "location": "FruitBasketSteps.i_remove_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 86152,
+  "duration": 90254,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "wrong quantity",
-      "offset": 19
+      "offset": 26
     }
   ],
   "location": "FruitBasketSteps.i_get_the_message(String)"
 });
 formatter.result({
-  "duration": 47179,
+  "duration": 56614,
   "status": "passed"
 });
 });

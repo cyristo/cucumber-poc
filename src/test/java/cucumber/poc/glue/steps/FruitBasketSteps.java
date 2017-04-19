@@ -36,12 +36,12 @@ public class FruitBasketSteps {
 		}
 	}
 
-	@When("^I can checkout with a total amount of (.+)$")
+	@When("^I should checkout with a total amount of (.+)$")
 	public void i_can_checkout_with_a_total_amount_of(double total) throws Throwable {
 		assertEquals(total, basket.total(), 0);
 	}
 
-	@Then("^I get the message \"([^\"]*)\"$")
+	@Then("^I should get the message \"([^\"]*)\"$")
 	public void i_get_the_message(String message) throws Throwable {
 		assertEquals(errorMessage, message);
 	}
