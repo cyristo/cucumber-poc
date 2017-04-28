@@ -2,7 +2,7 @@ $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.
 formatter.feature({
   "line": 1,
   "name": "Fruit Basket",
-  "description": "\r\nIn order to sell bananas ans apples\r\nAs a fruit seller\r\nI want a basket to add and remove articles and to provide the total price",
+  "description": "\r\nIn order to sell bananas and apples\r\nAs a fruit seller\r\nI want a basket to add and remove articles and to provide the total price",
   "id": "fruit-basket",
   "keyword": "Feature"
 });
@@ -143,7 +143,7 @@ formatter.match({
   "location": "FruitBasketSteps.the_price_of_a_is(String,double)"
 });
 formatter.result({
-  "duration": 192868603,
+  "duration": 99851746,
   "status": "passed"
 });
 formatter.match({
@@ -160,7 +160,7 @@ formatter.match({
   "location": "FruitBasketSteps.the_price_of_a_is(String,double)"
 });
 formatter.result({
-  "duration": 130867,
+  "duration": 87377,
   "status": "passed"
 });
 formatter.match({
@@ -177,7 +177,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 139483,
+  "duration": 84505,
   "status": "passed"
 });
 formatter.match({
@@ -194,7 +194,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 92715,
+  "duration": 56200,
   "status": "passed"
 });
 formatter.match({
@@ -207,7 +207,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_can_checkout_with_a_total_amount_of(double)"
 });
 formatter.result({
-  "duration": 2276431,
+  "duration": 1615448,
   "status": "passed"
 });
 formatter.scenario({
@@ -272,7 +272,7 @@ formatter.match({
   "location": "FruitBasketSteps.the_price_of_a_is(String,double)"
 });
 formatter.result({
-  "duration": 127585,
+  "duration": 89428,
   "status": "passed"
 });
 formatter.match({
@@ -289,7 +289,7 @@ formatter.match({
   "location": "FruitBasketSteps.the_price_of_a_is(String,double)"
 });
 formatter.result({
-  "duration": 112816,
+  "duration": 75481,
   "status": "passed"
 });
 formatter.match({
@@ -306,7 +306,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 89843,
+  "duration": 69327,
   "status": "passed"
 });
 formatter.match({
@@ -323,7 +323,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 89843,
+  "duration": 62353,
   "status": "passed"
 });
 formatter.match({
@@ -336,7 +336,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_can_checkout_with_a_total_amount_of(double)"
 });
 formatter.result({
-  "duration": 92305,
+  "duration": 63584,
   "status": "passed"
 });
 formatter.scenario({
@@ -376,7 +376,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 94356,
+  "duration": 114042,
   "status": "passed"
 });
 formatter.match({
@@ -393,7 +393,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 115688,
+  "duration": 119374,
   "status": "passed"
 });
 formatter.match({
@@ -406,7 +406,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_get_the_message(String)"
 });
 formatter.result({
-  "duration": 86971,
+  "duration": 65225,
   "status": "passed"
 });
 formatter.scenario({
@@ -456,7 +456,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_add_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 94355,
+  "duration": 73019,
   "status": "passed"
 });
 formatter.match({
@@ -473,7 +473,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_remove_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 107894,
+  "duration": 77532,
   "status": "passed"
 });
 formatter.match({
@@ -486,7 +486,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_get_the_message(String)"
 });
 formatter.result({
-  "duration": 58255,
+  "duration": 35279,
   "status": "passed"
 });
 formatter.match({
@@ -503,7 +503,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_remove_to_my_basket(String,String)"
 });
 formatter.result({
-  "duration": 90254,
+  "duration": 61123,
   "status": "passed"
 });
 formatter.match({
@@ -516,7 +516,7 @@ formatter.match({
   "location": "FruitBasketSteps.i_get_the_message(String)"
 });
 formatter.result({
-  "duration": 56614,
+  "duration": 44304,
   "status": "passed"
 });
 });
